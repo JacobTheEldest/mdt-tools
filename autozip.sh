@@ -39,7 +39,7 @@ if [ -z $1 ] || [ $1 == "-h" ] || [ $1 == "--help" ]; then
 fi
 
 # Check for proper number of arguments
-if [ ! -z $4 ]; then # if there are too many arguments
+if [ $4 ]; then # if there are too many arguments
 	echo; echo "Error! Too many arguments!"; echo
 	echo "See help for more info (-h or --help)"; echo
 	exit 1 # Quit script
